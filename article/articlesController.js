@@ -3,8 +3,8 @@ const router = express.Router();
 
 const Article = require("./Article");
 
-router.get("/add", (req, res) => {
-    res.render("article/add.ejs");
+router.get("/admin/article/add", (req, res) => {
+    res.render("admin/article/add.ejs");
 })
 
 router.post("/add", (req,res) => {

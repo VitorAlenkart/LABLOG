@@ -32,7 +32,7 @@ async function main() {
         res.render("index.ejs");
     })
 
-    app.use("/article",articleController);
+    app.use("/",articleController);
 
     app.listen(8080,()=>{
         console.log("App rodando!");
