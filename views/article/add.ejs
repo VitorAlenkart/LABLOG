@@ -1,21 +1,32 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar Artigo!</title>
-</head>
-<body>
+<%- include('../partials/header') %>
 
     <div class="container">
-        <h1>Criar artigo</h1>
+        <h1>Criar artigo</h1><br>
 
-        <form action="" method="post"></form>
+        <form action="/article/add" method="post">
+            
+            <h1>
+                Título
+            </h1>
+            <label for="Title" >
+                <input type="text" id="title" name="title" class="form-control" placeholder="Titulo...">
+            </label>
+            <hr>
+
+            <h1>
+                Texto
+            </h1>
+            <label for="Title" class="input-group input-group-lg" >
+                <input type="text" id="body" name="body" class="form-control" placeholder="Texto...">
+            </label>
+
+            <button type="submit">enviar</button>
+
+        </form>
         
     </div>
     
-</body>
-</html>
+<%- include('../partials/footer') %>
 
 <style>
 

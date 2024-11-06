@@ -8,10 +8,10 @@ router.get("/add", (req, res) => {
 })
 
 router.post("/add", (req,res) => {
+    const data = req.body;
     try{
-        Article.create({
-            
-        })
+        console.log(data);
+        res.redirect("/")
     }catch(err) {
         console.log(err)
     }

@@ -2,6 +2,14 @@ async function main() {
     const express = require("express");
     const router = express.Router();
     const app = express();
+    const bodyParser = require("body-parser");
+
+    app.use(express.static('public'))
+
+    app.use(express.urlencoded({extends:false}))
+    app.use(express.json());
+
+
 
     const articleController = require("./article/articlesController");
 
