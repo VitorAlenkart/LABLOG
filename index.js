@@ -6,6 +6,9 @@ async function main() {
 
     app.use(express.static('public'))
 
+    require('dotenv').config()
+    console.log(process.env.PASSWORD)
+
     app.use(express.urlencoded({extends:false}))
     app.use(express.json());
 
